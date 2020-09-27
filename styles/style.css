@@ -1,0 +1,223 @@
+#header {
+   display: grid;
+   grid-template-columns: 1fr 2fr 3fr ;
+   grid-template-rows: 50px auto;
+   position: fixed;
+   top: 0px;
+    min-height: 75px;
+    padding: 0px 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+
+.nav-link  a, li {
+    list-style: none;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    align-items: center;
+}
+
+nav > ul {
+    display: flex; 
+    min-height: 75px;   
+    flex-direction: row;    
+    justify-content: space-evenly;
+    position: fixed;
+    width: 300px;
+    top: 0px;
+    align-items: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+.title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+.logo > img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 100px 100px;   
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box1 {
+    object-fit: contain;
+    min-height: 100%;
+    min-width: 100%;
+    justify-content: stretch;
+  }
+
+
+
+.box2 {
+    background-color: green;
+}
+
+#email {
+    width: 200px;
+    border-radius: 2px;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+#hero > h2 {
+    margin-bottom: 25px;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+#hero input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color: #f1c40f;
+    margin-top: 25px;
+
+
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit" i] {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark-color(buttontext, rgb(170, 170, 170));
+    background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        display: inline-block
+        
+    }
+
+    .description {
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .icon > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .features {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-wrap: wrap;
+        }
+    }
